@@ -12,7 +12,7 @@ import * as $index from "./routes/index.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $Echoer from "./islands/Echoer.tsx";
 import * as $Input from "./islands/Input.tsx";
-import * as $Message from "./islands/Message.tsx";
+import * as $Joke from "./islands/Joke.tsx";
 import * as $SubscribeForm from "./islands/SubscribeForm.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
@@ -30,7 +30,7 @@ const manifest = {
     "./islands/Counter.tsx": $Counter,
     "./islands/Echoer.tsx": $Echoer,
     "./islands/Input.tsx": $Input,
-    "./islands/Message.tsx": $Message,
+    "./islands/Joke.tsx": $Joke,
     "./islands/SubscribeForm.tsx": $SubscribeForm,
   },
   baseUrl: import.meta.url,

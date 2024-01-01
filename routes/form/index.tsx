@@ -14,9 +14,7 @@ export const handler: Handlers<Props> = {
     const form = await req.formData();
     console.log({ form });
     const email = form.get("email")?.toString();
-    if (!email) {
-      return await ctx.render({ error: "No email provided." });
-    }
+    if (!email) return await ctx.render({ error: "No email provided" });
     console.log({ email });
 
     const headers = new Headers();

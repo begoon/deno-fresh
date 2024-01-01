@@ -30,7 +30,7 @@ export default function Greet(props: PageProps<Data>) {
       <a class="underline" href="/greet/partial-name">Partial NAME</a>
       <a class="underline" href="/greet/partial-value">Partial VALUE</a>
       <form action="/greet/partial-form" method="GET">
-        <button class="border rounded border-slate-700  p-1">Partial FORM</button>
+        <button class="border rounded border-slate-700 p-1">Partial FORM</button>
       </form>
       <Partial name="name" mode="append">
         <p>{name.value}, when [{(new Date()).toLocaleString()}]</p>
